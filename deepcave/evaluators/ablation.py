@@ -121,6 +121,7 @@ class Ablation:
         # Get the default configuration
         self.default_config = self.cs.get_default_configuration()
         default_encode = self.run.encode_config(self.default_config)
+        print(default_encode[0], self.default_config.get_array()[0])
 
         # Obtain the predicted cost of the default and incumbent configuration
         def_cost, def_std = self._model.predict(np.array([default_encode]))

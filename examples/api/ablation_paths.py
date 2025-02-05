@@ -13,7 +13,7 @@ from pathlib import Path
 
 if __name__ == "__main__":
     # Instantiate the run
-    run = DeepCAVERun.from_path(Path("logs/DeepCAVE/minimal/run_1"))
+    run = DeepCAVERun.from_path(Path("logs/DeepCAVE/digits_sklearn/run_1"))
 
     objective_id1 = run.get_objective_ids()[0]
     objective_id2 = None  # replace with run.get_objective_ids()[1] for multi-objective importance
